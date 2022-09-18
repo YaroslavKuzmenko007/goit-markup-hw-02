@@ -6,6 +6,8 @@
   --color-white: #fff;
   --color-black: #000;
   --btn-hover: #188ce8;
+  --btn-main-color: #f5f4fa;  
+  --bg-section: #f5f4fa;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
   color: var(--main-color-font);
   letter-spacing: 0.03em;
   font-size: 14px;
+  background-color: var(--color-white);
 }
 
 .visually-hiden {
@@ -54,6 +57,14 @@ body {
   list-style: none;
 }
 
+.our-team{
+  background-color: var(--bg-section);
+}
+
+.portfolio-item a{
+  text-decoration: none;
+}
+
 .menu-item {
   font-weight: 500;
   line-height: 1.14;
@@ -77,7 +88,9 @@ body {
 .contact-mail:hover,
 .contact-mail:focus,
 .contact-tel:hover,
-.contact-tel:focus {
+.contact-tel:focus,
+.href:hover,
+.href:focus {
   color: var(--color-acent);
 }
 
@@ -114,6 +127,7 @@ body {
 
 .benefit-head {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -133,6 +147,13 @@ body {
   font-size: 16px;
   line-height: 1.19;
 }
+
+.team-item {
+  background-color: var(--color-white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-position {
   font-size: 16px;
   line-height: 1.19;
@@ -169,6 +190,7 @@ body {
   font-family: inherit;
   letter-spacing: 0.03em;
   color: var(--main-color-font);
+  background-color: var(--btn-main-color);
   border: none;
   cursor: pointer;
 }
@@ -188,6 +210,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--color-black);
 }
 
 .portfolio-text {

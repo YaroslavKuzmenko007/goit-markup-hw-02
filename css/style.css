@@ -49,13 +49,14 @@ button {
   cursor: pointer;
 }
 
-.section {
-  padding: 94px 0;
-  /* outline: 2px solid green; */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   /* outline: 2px solid red; */
@@ -85,6 +86,7 @@ button {
   line-height: 1.19;
   color: var(--color-acent);
   text-decoration: none;
+  margin-right: 93px;
 }
 
 .menu {
@@ -95,9 +97,6 @@ button {
 .menu-item + .menu-item {
   /* border: 1px red solid; */
   margin-left: 50px;
-}
-.menu-item:first-child {
-  margin-left: 93px;
 }
 
 .header .contact {
@@ -131,10 +130,6 @@ button {
 .portfolio-item {
   list-style: none;
 }
-
-/* .our-work-img {
-  width: calc((100% - 60px) / 3);
-} */
 
 .our-team {
   background-color: var(--bg-section);
@@ -175,6 +170,7 @@ button {
 
 .main {
   background: var(--bg-color);
+  padding: 200px 0;
 }
 
 .main-head {
@@ -184,10 +180,9 @@ button {
   letter-spacing: 0.06em;
   color: var(--color-white);
   text-transform: uppercase;
-  width: 696px;
+  max-width: 696px;
   margin: 0 auto;
-  padding-top: 104px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -206,7 +201,6 @@ button {
   display: block;
   padding: 10px 32px;
   margin: 0 auto;
-  margin-bottom: 104px;
 }
 
 .order-buuton:hover,
@@ -214,11 +208,16 @@ button {
   background-color: var(--btn-hover);
 }
 
+.benefits-section {
+  padding: 94px 0;
+}
+
 .benefit-head {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefits {
@@ -233,7 +232,6 @@ button {
 .benefits-text {
   line-height: 1.71;
   color: var(--secondary-color);
-  padding-top: 10px;
 }
 
 .second-head {
@@ -241,15 +239,12 @@ button {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .our-work {
   display: flex;
   justify-content: space-between;
-}
-
-.our-work-img {
-  padding-top: 50px;
 }
 
 .team-head {
@@ -258,18 +253,30 @@ button {
   line-height: 1.19;
 }
 
+.our-team {
+  padding: 94px 0;
+}
+
 .team {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
 }
 
 .team-item {
   width: 270px;
+  text-align: center;
   background-color: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-discription {
+  padding: 30px 0;
+}
+
+.team-head {
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -290,12 +297,17 @@ button {
 }
 .footer .head {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .address .contact-item {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
+
+.address .contact-item:last-child {
+  margin-bottom: 0;
+}
+
 .href {
   color: var(--color-white);
   text-decoration: none;
@@ -306,14 +318,18 @@ button {
   font-style: normal;
 }
 
+.section-portfolio {
+  padding: 94px 0;
+}
+
 .nav-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .li-btn + .li-btn {
-  padding-left: 8px;
+  margin-left: 8px;
 }
 
 .item-btn {
@@ -345,20 +361,13 @@ button {
   gap: 30px;
 }
 
-/* .portfolio-item {
-  width: calc((100% - 60px) / 3);
-} */
-
-.portfolio-item img {
-  display: block;
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .portfolio-discription {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
-}
-
-.portfolio-discription {
   border-top: none;
 }
 
